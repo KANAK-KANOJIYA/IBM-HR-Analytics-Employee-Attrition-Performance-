@@ -1,0 +1,140 @@
+STEPS IN SOLVING THIS CASE STUDY : 
+1).	Understanding the data : 
+•	The data is taken from a public source, Kaggle 
+•	 The dataset contains 8 CSV files named: HR-EMPLOYEE-ATTRITION
+•	 The data is perfectly suitable for this project to analyse attrition ,employye ,education ,job role job satisfication
+2) Data Analysis : 
+ASK: 
+By this project, I am trying to analyse HR attrition performance for the 
+TARGET employee’s and present my insights in a comprehensive 
+dashboard 
+
+PREPARE : 
+•	 Load the datasets in Visual Studio
+•	 Prepared a copy of the dataset for further reference 
+•	 Saved the datasets by using naming conventions in a separate file folder for easy access 
+PROCESS : 
+•	DATA CLEANING :
+I used visual studio for data cleaning by following these steps  
+•	Defining data type & describing it
+•	Visualization: 
+1.Distribution of attrition rate
+2.Average tenure
+3.Distribution Employee by Age, Distribution Employee by Gender, 4.Distribution Employee by Department
+
+
+If we take a look at our Datasets
+
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+
+data = pd.read_csv(r"C:\Users\kanak\Desktop\UNIFIED MENTOR PROJ\DAproj_1IN\WA_Fn-UseC_-HR-Employee-Attrition.csv")
+data.head()
+
+data.shape
+(1470, 35)
+import pandas as pd
+
+print(f'Number of duplicated data: {data.duplicated().sum()}')
+print(data.isnull().sum() / len(data)*100)
+
+data.dtypes
+
+data.describe
+import matplotlib.pyplot as plt
+import seaborn as sns
+Attrition = data['Attrition'].value_counts(normalize=True)
+ax = sns.barplot(x=Attrition.index, y=Attrition)
+for p in ax.patches:
+    ax.annotate(f'{p.get_height() * 100:.2f}%',
+                (p.get_x() + p.get_width() / 2., p.get_height()),
+                ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
+                textcoords='offset points')
+plt.title('Distribution of Attrition Rate')
+plt.xlabel('Attrition')
+plt.ylabel('Percentage')
+plt.tight_layout()
+plt.show()
+
+
+
+
+
+#To find Attrition Rate
+data['Attrition'].value_counts(normalize=True)
+Attrition
+No     0.838776
+Yes    0.161224 
+Name: proportion, dtype: float64
+
+#Plotting Distribution of Attrition Rate 
+import matplotlib.pyplot as plt
+import seaborn as sns
+Attrition = data['Attrition'].value_counts(normalize=True)
+ax = sns.barplot(x=Attrition.index, y=Attrition)
+for p in ax.patches:
+    ax.annotate(f'{p.get_height() * 100:.2f}%',
+                (p.get_x() + p.get_width() / 2., p.get_height()),
+                ha='center', va='center', fontsize=10, color='black', xytext=(0, 5),
+                textcoords='offset points')
+plt.title('Distribution of Attrition Rate')
+plt.xlabel('Attrition')
+plt.ylabel('Percentage')
+plt.tight_layout()
+plt.show()
+ 
+
+
+
+#Average Tenure
+avg_tenure = data['YearsAtCompany'].mean()
+print(f'Average years of employee to leave the company years is')
+print(avg_tenure)
+Average years of employee to leave the company years is
+7.0081632653061225
+
+Plotting Distribution of Employee Age, Distribution of Employee Gender, Distribution of Employee Department
+fig, axes = plt.subplots(nrows=1, ncols=3, figsize=(15,5))
+sns.histplot(data=data, x='Age', kde=True, ax=axes[0])
+axes[0].set_title('Distribution Employee by Age')
+axes[0].set_xlabel('Age')
+axes[0].set_ylabel('Count')
+sns.countplot(data=data, x='Department', ax=axes[2])
+axes[2].set_title('Distribution Employee by Department')
+axes[2].set_xlabel('Department')
+axes[2].set_ylabel('Count')
+sns.countplot(data=data, x='Gender', ax=axes[1])
+axes[1].set_title('Distribution Employee by Gender')
+axes[1].set_xlabel('Gender')
+axes[1].set_ylabel('Count')
+plt.tight_layout()
+ 
+data_attrition = data[data['Attrition'] == 'Yes']
+data_attrition.head()
+def calculate_Attrition_rate(data, column):
+    attrition_counts = data.groupby([column, 'Attrition']).size().unstack(fill_value=0)
+    attrition_rate = attrition_counts['Yes'] / attrition_counts.sum(axis=1) * 100
+    attrition_rate_data = attrition_rate.reset_index()
+    attrition_rate_data.columns = [column, 'Attrition Rate']
+    return attrition_rate_data
+  
+#Plotting Attrition by Age & Gender
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(15,6))
+# Plot 1: KDE plot of Age with Attrition hue
+sns.kdeplot(data=data_attrition, x='Age', fill=True, ax=axes[0])
+axes[0].set_title('Attrition by Age')
+axes[0].set_xlabel('Age')
+axes[0].set_ylabel('Density')
+# Plot 2: Bar plot of Gender count with Attrition hue
+attrition_rate_data = calculate_attrition_rate(data, 'Gender')
+sns.barplot(data=attrition_rate_data, x='Gender',y='AttritionRate', ax=axes[1])
+axes[1].set_title(f'Attrition Rate by Gender')
+axes[1].set_xlabel('Gender')
+axes[1].set_ylabel('Attrition Rate (%)')
+plt.tight_layout()
+plt.show()
+ 
+
+
