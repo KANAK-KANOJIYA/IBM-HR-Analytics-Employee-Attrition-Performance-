@@ -30,10 +30,10 @@ Features: 35 variables, including demographics, job roles, satisfaction levels, 
 
 **🛠 Tools & Technologies Used**
 
-✅Power BI: For interactive dashboards
-✅Python: pandas, matplotlib, seaborn, scikit-learn for EDA & ML
-✅ SQL / CSV: Data storage and retrieval
-✅ Jupyter Notebook: Data processing and documentation
+✅Power BI: For interactive dashboards  
+✅Python: pandas, matplotlib, seaborn, scikit-learn for EDA & ML  
+✅ SQL / CSV: Data storage and retrieval  
+✅ Jupyter Notebook: Data processing and documentation  
 
 **📈 Performance Overview**
 
