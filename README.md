@@ -21,12 +21,14 @@ Features: 35 variables, including demographics, job roles, satisfaction levels, 
 
 **🔍 Core Features:**
 
-**🖇Demographics:**  Age, Gender, Marital Status, Education Field  
-**🖇Work Factors:**  Department, JobRole, JobLevel, OverTime  
-**🖇Performance:**  JobInvolvement, PerformanceRating, YearsAtCompany  
-**🖇Satisfaction:**  JobSatisfaction, WorkLifeBalance, EnvironmentSatisfaction  
-**🖇Financial:**  MonthlyIncome, SalaryHike, StockOptionLevel  
-**🖇Target:**  Attrition (Yes / No)  
+**🔗Demographics:**  Age, Gender, Marital Status, Education Field  
+**🔗Work Factors:**  Department, JobRole, JobLevel, OverTime  
+**🔗Performance:**  JobInvolvement, PerformanceRating, YearsAtCompany  
+**🔗Satisfaction:**  JobSatisfaction, WorkLifeBalance, EnvironmentSatisfaction  
+**🔗Financial:**  MonthlyIncome, SalaryHike, StockOptionLevel  
+**🔗Target:**  Attrition (Yes / No)  
+
+
 
 **🛠 Tools & Technologies Used**
 
