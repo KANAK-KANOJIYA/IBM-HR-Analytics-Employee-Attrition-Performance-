@@ -3,7 +3,7 @@
 **🧠 About the Project**
 This real-world HR analytics project focused on understanding employee attrition trends and identifying key factors influencing turnover using data-driven insights. With 35 HR variables across 1,470 employees, the analysis helped HR professionals pinpoint critical retention levers and proactively improve employee experience.
 
-**## 📊 Overview**
+**📊 Overview**
 
 This project explores IBM’s HR data to understand the drivers behind employee attrition and develop strategies to improve retention. It combines exploratory data analysis, visualization (Power BI), and predictive modeling to deliver actionable business insights.
 Employee attrition is a major concern for businesses as it results in high recruitment and training costs along with lost productivity. This project analyzes employee attrition data to uncover the underlying factors contributing to employee turnover using Power BI and Python.
