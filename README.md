@@ -46,10 +46,10 @@ Total	1,470
 
 **📊 EDA Insights**  
 
-✅Employees doing OverTime are 3x more likely to leave.
-✅Sales and R&D departments experience higher attrition.
-✅JobSatisfaction < 2 strongly correlates with leaving.
-✅ Younger employees (<30) and those with <2 years at company are more at risk.
+✅Employees doing OverTime are 3x more likely to leave.  
+✅Sales and R&D departments experience higher attrition.  
+✅JobSatisfaction < 2 strongly correlates with leaving.  
+✅ Younger employees (<30) and those with <2 years at company are more at risk.  
 
 **📌 ACT (What HR Should Do)**
 
