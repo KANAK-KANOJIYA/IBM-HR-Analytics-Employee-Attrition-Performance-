@@ -13,20 +13,20 @@ Employee attrition is a major concern for businesses as it results in high recru
 To analyze employee data and identify key factors contributing to attrition, enabling HR teams to make data-driven decisions and reduce employee turnover.
 
 **🗂 Dataset**
-Source: Kaggle - IBM HR Analytics Employee Attrition & Performance
-Records: 1,470 employees
-Features: 35 variables, including demographics, job roles, satisfaction levels, compensation, performance, and attrition status.
+Source: Kaggle - IBM HR Analytics Employee Attrition & Performance  
+Records: 1,470 employees  
+Features: 35 variables, including demographics, job roles, satisfaction levels, compensation, performance, and attrition status.  
 
 **🧠 Key Highlights**
 
 **🔍 Core Features:**
 
-**Demographics:** Age, Gender, Marital Status, Education Field
-**Work Factors:** Department, JobRole, JobLevel, OverTime
-**Performance:** JobInvolvement, PerformanceRating, YearsAtCompany
-**Satisfaction:** JobSatisfaction, WorkLifeBalance, EnvironmentSatisfaction
-**Financial:** MonthlyIncome, SalaryHike, StockOptionLevel
-**Target:** Attrition (Yes / No)
+**Demographics:** Age, Gender, Marital Status, Education Field  
+**Work Factors:** Department, JobRole, JobLevel, OverTime  
+**Performance:** JobInvolvement, PerformanceRating, YearsAtCompany  
+**Satisfaction:** JobSatisfaction, WorkLifeBalance, EnvironmentSatisfaction  
+**Financial:** MonthlyIncome, SalaryHike, StockOptionLevel  
+**Target:** Attrition (Yes / No)  
 
 **🛠 Tools & Technologies Used**
 
@@ -37,14 +37,14 @@ Features: 35 variables, including demographics, job roles, satisfaction levels, 
 
 **📈 Performance Overview**
 
-Performance Rating	Employee Count
+Performance Rating	Employee Count  
 
-Excellent	1,244
-Outstanding	226
-Total	1,470
-> 🔎 Insight: 85% of employees are rated "Excellent", only 15% "Outstanding".
+Excellent	1,244  
+Outstanding	226  
+Total	1,470  
+> 🔎 Insight: 85% of employees are rated "Excellent", only 15% "Outstanding".  
 
-**📊 EDA Insights**
+**📊 EDA Insights**  
 
 ✅Employees doing OverTime are 3x more likely to leave.
 ✅Sales and R&D departments experience higher attrition.
@@ -70,20 +70,20 @@ Total	1,470
 
 **💡 Suggestions**
 
-✅ Enhance managerial engagement through leadership training.
-✅ Use ML models to predict attrition and intervene proactively.
-✅Improve work-life balance programs and mental wellness support.
-✅ Recognize & reward top performers to encourage loyalty.
+✅ Enhance managerial engagement through leadership training.  
+✅ Use ML models to predict attrition and intervene proactively.  
+✅Improve work-life balance programs and mental wellness support.  
+✅ Recognize & reward top performers to encourage loyalty.  
 
-**📊 Dashboards (Power BI)**
+**📊 Dashboards (Power BI)**  
 
-Attrition by Department, Job Role, Gender, Education
-Monthly Income vs. Education vs. Attrition
-KPI Cards: Work-Life Balance, Job Satisfaction, Environment Satisfaction
-Visuals: Heatmaps, bar charts, and filters for interactivity
-> Sample dashboards are available in the /Dashboards folder.
+Attrition by Department, Job Role, Gender, Education  
+Monthly Income vs. Education vs. Attrition  
+KPI Cards: Work-Life Balance, Job Satisfaction, Environment Satisfaction  
+Visuals: Heatmaps, bar charts, and filters for interactivity  
+> Sample dashboards are available in the /Dashboards folder.  
 
-**📌 Conclusion**
+**📌 Conclusion**  
 
-✅ Attrition is closely tied to workload, satisfaction, and compensation.
-✅ Targeted HR policies and ML-backed interventions can drive employee retention.
+✅ Attrition is closely tied to workload, satisfaction, and compensation.  
+✅ Targeted HR policies and ML-backed interventions can drive employee retention.  
