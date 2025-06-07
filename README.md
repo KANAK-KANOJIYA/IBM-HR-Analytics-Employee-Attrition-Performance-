@@ -12,11 +12,11 @@ Employee attrition is a major concern for businesses as it results in high recru
 
 To analyze employee data and identify key factors contributing to attrition, enabling HR teams to make data-driven decisions and reduce employee turnover.
 
-🗂 Dataset
+**🗂 Dataset**
 Source: Kaggle - IBM HR Analytics Employee Attrition & Performance
 Records: 1,470 employees
 Features: 35 variables, including demographics, job roles, satisfaction levels, compensation, performance, and attrition status.
---
+
 
 🧠 Key Highlights
 
