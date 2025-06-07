@@ -1,80 +1,90 @@
 # IBM-HR-Analytics-Employee-Attrition-Performance-
 ## 📊 Overview
+🧠 About the Project
+This real-world HR analytics project focused on understanding employee attrition trends and identifying key factors influencing turnover using data-driven insights. With 35 HR variables across 1,470 employees, the analysis helped HR professionals pinpoint critical retention levers and proactively improve employee experience.
 
+## 📊 Overview
+
+This project explores IBM’s HR data to understand the drivers behind employee attrition and develop strategies to improve retention. It combines exploratory data analysis, visualization (Power BI), and predictive modeling to deliver actionable business insights.
 Employee attrition is a major concern for businesses as it results in high recruitment and training costs along with lost productivity. This project analyzes employee attrition data to uncover the underlying factors contributing to employee turnover using Power BI and Python.
 
-## 🧠 Problem Statement
+✅ Project Objective
 
-The objective is to identify patterns and key drivers of employee attrition using HR data. The insights gained will support HR teams in creating better employee retention strategies.
+To analyze employee data and identify key factors contributing to attrition, enabling HR teams to make data-driven decisions and reduce employee turnover.
 
-## 📂 Data Source
+🗂 Dataset
+Source: Kaggle - IBM HR Analytics Employee Attrition & Performance
+Records: 1,470 employees
+Features: 35 variables, including demographics, job roles, satisfaction levels, compensation, performance, and attrition status.
+--
 
-* The dataset used in this project is publicly available on [Kaggle](https://www.kaggle.com/)
-* Data includes 1,470 employee records with 35 features like age, income, job role, satisfaction level, overtime, etc.
+🧠 Key Highlights
 
-## 🔧 Tools Used
+🔍 Core Features:
 
-* **Power BI** for interactive dashboards
-* **Python (Visual Studio, Jupyter Notebook)** for data cleaning and preprocessing
-* Libraries: `Pandas`, `NumPy`, `Matplotlib`, `Seaborn`
+**Demographics:** Age, Gender, Marital Status, Education Field
+**Work Factors:** Department, JobRole, JobLevel, OverTime
+**Performance:** JobInvolvement, PerformanceRating, YearsAtCompany
+**Satisfaction:** JobSatisfaction, WorkLifeBalance, EnvironmentSatisfaction
+**Financial:** MonthlyIncome, SalaryHike, StockOptionLevel
+**Target:** Attrition (Yes / No)
 
-## 📌 Key Tasks
+🛠 Tools & Technologies Used
 
-### 1. Data Cleaning
+✅Power BI: For interactive dashboards
+✅Python: pandas, matplotlib, seaborn, scikit-learn for EDA & ML
+✅ SQL / CSV: Data storage and retrieval
+✅ Jupyter Notebook: Data processing and documentation
 
-* Removed duplicates
-* Checked and handled missing values
-* Set appropriate data types
+📈 Performance Overview
 
-### 2. Visual Analysis
+Performance Rating	Employee Count
 
-* Attrition rate distribution
-* Attrition by job role, age, gender, education, and department
-* Monthly income comparisons by education and attrition
-* Job satisfaction and overtime impact
+Excellent	1,244
+Outstanding	226
+Total	1,470
+> 🔎 Insight: 85% of employees are rated "Excellent", only 15% "Outstanding".
 
-### 3. Dashboard Development
+📊 EDA Insights
 
-* Interactive filters: attrition status, department, education field, income level, job role, etc.
-* Key metrics: Attrition rate, average income, employee count, job involvement
+✅Employees doing OverTime are 3x more likely to leave.
+✅Sales and R&D departments experience higher attrition.
+✅JobSatisfaction < 2 strongly correlates with leaving.
+✅ Younger employees (<30) and those with <2 years at company are more at risk.
 
-## 💡 Insights
+📌 ACT (What HR Should Do)
 
-* **Overall Attrition Rate**: 16.12%
-* **Highest Attrition**: Sales (38.8%) and R\&D (56.1%) departments
-* **Job Roles at Risk**: Laboratory Technicians, Sales Executives
-* **Age Group Most Affected**: 28–39 years
-* **Overtime Impact**: 53.6% of those who left worked overtime
-* **Satisfaction Level**: 30.4% of attrition cases had the lowest satisfaction rating
+1. Flexible Work Arrangements
+> Especially for Sales and R&D employees facing burnout.
 
-## 🧪 Hypotheses
+2. Monitor Workload & Overtime
+> Redistribute tasks and track overtime hours.
 
-Factors likely contributing to attrition include:
+3. Job Satisfaction Monitoring
+> Conduct quarterly surveys and manager check-ins.
 
-* Job satisfaction
-* Work-life balance
-* Monthly income
-* Overtime hours
-* Career advancement
-* Manager-employee relationship
+4. Incentive Structures
+> Performance-based bonuses, stock options, or learning stipends.
 
-## 📈 Suggestions
+5. Personalized Career Paths
+> For mid-career employees at high attrition risk.
 
-* Introduce flexible hours and remote options
-* Monitor and manage workloads
-* Implement employee satisfaction surveys
-* Create personalized career growth paths
-* Offer performance-based bonuses
+💡 Suggestions
 
-## 📎 Folder Structure
+✅ Enhance managerial engagement through leadership training.
+✅ Use ML models to predict attrition and intervene proactively.
+✅Improve work-life balance programs and mental wellness support.
+✅ Recognize & reward top performers to encourage loyalty.
 
-```
-/Data                # Raw dataset files
-/Notebooks           # Jupyter notebooks used for analysis
-/Dashboard           # Power BI dashboard files
-README.md            # Project overview
-```
+📊 Dashboards (Power BI)
 
-## ✅ Outcome
+Attrition by Department, Job Role, Gender, Education
+Monthly Income vs. Education vs. Attrition
+KPI Cards: Work-Life Balance, Job Satisfaction, Environment Satisfaction
+Visuals: Heatmaps, bar charts, and filters for interactivity
+> Sample dashboards are available in the /Dashboards folder.
 
-A comprehensive Power BI dashboard and data-driven insights that can help HR departments identify at-risk employees and reduce turnover rates through targeted interventions.
+📌 Conclusion
+
+✅ Attrition is closely tied to workload, satisfaction, and compensation.
+✅ Targeted HR policies and ML-backed interventions can drive employee retention.
