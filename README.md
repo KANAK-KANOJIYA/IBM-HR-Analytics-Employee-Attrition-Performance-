@@ -1,5 +1,5 @@
 # IBM-HR-Analytics-Employee-Attrition-Performance-
-## 📊 Overview
+
 🧠 About the Project
 This real-world HR analytics project focused on understanding employee attrition trends and identifying key factors influencing turnover using data-driven insights. With 35 HR variables across 1,470 employees, the analysis helped HR professionals pinpoint critical retention levers and proactively improve employee experience.
 
